@@ -127,7 +127,11 @@ li {
   height: 1rem;
   width: 1rem;
   background-color: #e71b2c;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  transition: all .3s; }
+  .client-button:hover {
+    transform: scale(1.5);
+    transition: all .3s; }
 
 .skills__logo {
   position: relative;
@@ -165,7 +169,7 @@ li {
   align-items: center; }
   .reasons__skill {
     text-align: center;
-    width: 45rem; }
+    width: 25%; }
 
 .footer {
   border: 1px solid grey;
@@ -184,6 +188,9 @@ li {
     height: 30rem; }
     .footer__me:last-of-type {
       width: 20%; }
+    .footer__me-contact {
+      width: 30rem;
+      height: 30rem; }
   .footer__icon-container {
     margin-top: 2rem;
     height: 3rem;
@@ -212,17 +219,17 @@ li {
   flex-direction: column; }
 
 .hero-container {
+  width: 90%;
   display: flex;
-  align-content: center;
   align-items: center;
+  justify-content: space-evenly;
   animation-name: longFadeIn;
   animation-duration: 4s; }
   .hero-container__text {
-    margin-right: 5rem;
-    width: 50rem;
+    width: 30%;
     height: 20rem; }
   .hero-container__work {
-    width: 50rem;
+    width: 30%;
     height: 20rem;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 1rem;
@@ -250,22 +257,24 @@ li {
   width: 100%;
   top: 0;
   border-bottom: 1px solid #f7f7f7; }
+  .nav__text-box {
+    margin-left: 2%; }
   .nav__logo-text {
     color: #f7f7f7;
-    font-size: 3rem;
-    margin-left: 15%; }
+    font-size: 3rem; }
   .nav__logo-span {
     color: #e71b2c; }
   .nav__items {
-    width: 42%;
+    width: 70rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-right: 3%; }
+    margin-right: 2%; }
   .nav__link {
     color: #b8b8b8;
     text-transform: uppercase;
-    transition: all .2s; }
+    transition: all .2s;
+    margin-right: 2rem; }
     .nav__link:hover {
       color: #ffffff;
       transition: all .2s; }
@@ -334,7 +343,10 @@ li {
   justify-content: space-around;
   align-items: center; }
   .connect__text {
-    margin-right: -50rem; }
+    width: 30%; }
+  .connect__contact {
+    width: 35%;
+    text-align: center; }
 
 .why {
   display: flex;
@@ -359,4 +371,4 @@ li {
     margin-top: 10rem; }
   .testimonials__container {
     margin-top: 4rem;
-    width: 82rem; }
+    width: 60%; }
