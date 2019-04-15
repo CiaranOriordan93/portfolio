@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 @keyframes longFadeIn {
   0% {
     opacity: 0; }
@@ -52,6 +69,9 @@ body {
     height: 1px;
     background-color: #a1a1a1;
     margin-bottom: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .heading-tertiary {
+      font-size: 3rem; } }
 
 .heading-fourth {
   font-size: 1.9rem;
@@ -64,6 +84,9 @@ body {
 .hero-primary {
   color: #eee;
   font-size: 4.5rem; }
+  @media only screen and (max-width: 75em) {
+    .hero-primary {
+      font-size: 3.5rem; } }
 
 .hero-span {
   color: #e71b2c; }
@@ -71,10 +94,16 @@ body {
 .hero-tertiary {
   color: #eee;
   font-size: 3rem; }
+  @media only screen and (max-width: 75em) {
+    .hero-tertiary {
+      font-size: 2.5rem; } }
 
 .hero-para {
   color: #eee;
   font-size: 1.7rem; }
+  @media only screen and (max-width: 75em) {
+    .hero-para {
+      font-size: 1.6rem; } }
 
 .hero-cite {
   color: #eee; }
@@ -100,6 +129,9 @@ li {
     background-color: #2998ff;
     color: #eee;
     transition: all .5s; }
+  @media only screen and (max-width: 75em) {
+    .hero-button {
+      margin-top: -1rem; } }
 
 .nav-btn {
   margin-top: 10rem;
@@ -110,7 +142,7 @@ li {
   transform-origin: top center; }
 
 .about-button {
-  width: 30rem;
+  width: 70%;
   padding: .6rem;
   border-radius: 1rem;
   background-color: #e71b2c;
@@ -222,14 +254,17 @@ li {
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   animation-name: longFadeIn;
-  animation-duration: 4s; }
+  animation-duration: 4s;
+  max-width: 1040px; }
   .hero-container__text {
-    width: 30%;
     height: 20rem; }
+    @media only screen and (max-width: 75em) {
+      .hero-container__text {
+        width: 30rem; } }
   .hero-container__work {
-    width: 30%;
+    padding: 1rem;
     height: 20rem;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 1rem;
@@ -242,6 +277,9 @@ li {
       justify-content: center;
       width: 100%;
       margin-top: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .hero-container__work {
+        width: 30rem; } }
 
 .chevron {
   display: flex;
@@ -284,16 +322,27 @@ li {
 
 .about {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 60rem;
   background-color: #eee; }
+  .about__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 120rem; }
   .about__text {
-    width: 55rem;
-    margin-right: 6rem; }
-  .about__img {
-    border: 4px solid #e71b2c;
-    border-radius: 1rem; }
+    width: 30%; }
+  .about__img-container {
+    width: 45%; }
+    .about__img-container__img {
+      max-width: 90%;
+      height: auto;
+      border: 4px solid #e71b2c;
+      border-radius: 1rem; }
+      @media only screen and (max-width: 75em) {
+        .about__img-container__img {
+          max-width: 100%; } }
   .about__link {
     text-decoration: none;
     color: #eee; }
@@ -318,7 +367,7 @@ li {
     margin-top: 10rem;
     margin-bottom: 5rem; }
   .skills__list {
-    width: 110rem;
+    width: 65%;
     display: flex;
     flex-direction: row;
     margin-bottom: 1rem; }
