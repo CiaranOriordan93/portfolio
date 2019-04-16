@@ -87,6 +87,9 @@ body {
   @media only screen and (max-width: 75em) {
     .hero-primary {
       font-size: 3.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .hero-primary {
+      font-size: 2.5rem; } }
 
 .hero-span {
   color: #e71b2c; }
@@ -97,6 +100,9 @@ body {
   @media only screen and (max-width: 75em) {
     .hero-tertiary {
       font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .hero-tertiary {
+      font-size: 2rem; } }
 
 .hero-para {
   color: #eee;
@@ -173,6 +179,10 @@ li {
   height: 2rem;
   top: 3px;
   left: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .skills__logo {
+      height: 1.6rem;
+      left: 5px; } }
 
 .connect__logo {
   width: 4rem;
@@ -186,6 +196,12 @@ li {
     background-color: #e71b2c;
     fill: #f7f7f7;
     transition: all .3s; }
+  @media only screen and (max-width: 37.5em) {
+    .connect__logo {
+      height: 4rem;
+      padding: 1rem;
+      margin-right: 0;
+      margin-bottom: 5px; } }
 
 .skill-icon {
   height: 7rem; }
@@ -205,6 +221,13 @@ li {
   .reasons__skill {
     text-align: center;
     width: 25%; }
+    @media only screen and (max-width: 37.5em) {
+      .reasons__skill {
+        width: 90%;
+        margin-bottom: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .reasons {
+      flex-direction: column; } }
 
 .footer {
   border: 1px solid grey;
@@ -214,14 +237,28 @@ li {
   @media only screen and (max-width: 75em) {
     .footer {
       height: 53%; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      height: 85%; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      height: 110rem; } }
   .footer__container {
     display: flex;
     justify-content: space-around; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
   .footer__me {
     display: flex;
     align-content: center;
     flex-direction: column;
     width: 50%; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__me {
+        width: 85%; } }
     .footer__me:last-of-type {
       width: 20%; }
     .footer__me-contact {
@@ -233,6 +270,9 @@ li {
     width: 35%;
     display: flex;
     justify-content: space-around; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__icon-container {
+        align-self: center; } }
   .footer__heading {
     margin-top: 5rem;
     margin-bottom: 2rem;
@@ -266,6 +306,9 @@ li {
     @media only screen and (max-width: 75em) {
       .hero-container__text {
         width: 30rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .hero-container__text {
+        width: 90%; } }
   .hero-container__work {
     padding: 1rem;
     height: 20rem;
@@ -388,16 +431,32 @@ li {
   background-color: #eee; }
   @media only screen and (max-width: 56.25em) {
     .about {
-      flex-direction: column; } }
+      height: 90rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      height: 70rem; } }
   .about__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-width: 120rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about__container {
+        flex-direction: column; } }
   .about__text {
     width: 30%; }
+    @media only screen and (max-width: 56.25em) {
+      .about__text {
+        margin-bottom: 5rem;
+        width: 90%;
+        text-align: center; } }
   .about__img-container {
-    width: 45%; }
+    width: 45%;
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 56.25em) {
+      .about__img-container {
+        width: 75%; } }
     .about__img-container__img {
       max-width: 90%;
       height: auto;
@@ -434,6 +493,9 @@ li {
     display: flex;
     flex-direction: row;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .skills__list {
+        width: 90%; } }
   .skills__para {
     border: 1px solid #000;
     background-color: #e71b2c;
@@ -447,6 +509,9 @@ li {
       color: #e71b2c;
       border: 2px solid #e71b2c;
       transition: all .4s; }
+    @media only screen and (max-width: 37.5em) {
+      .skills__para {
+        font-size: 1.4rem; } }
 
 .connect {
   background-color: #f7f7f7;
@@ -456,9 +521,15 @@ li {
   align-items: center; }
   .connect__text {
     width: 30%; }
+  @media only screen and (max-width: 37.5em) {
+    .connect {
+      height: 50rem; } }
   .connect__contact {
     width: 35%;
     text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .connect__contact {
+        width: 20%; } }
 
 .why {
   display: flex;
@@ -467,6 +538,12 @@ li {
   background-color: #eee;
   height: 60rem;
   width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .why {
+      height: 75rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .why {
+      height: 120rem; } }
   .why__heading {
     text-align: center;
     margin-top: 10rem;
@@ -479,8 +556,17 @@ li {
   text-align: center;
   background-color: #f7f7f7;
   height: 60rem; }
+  @media only screen and (max-width: 56.25em) {
+    .testimonials {
+      height: 80rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .testimonials {
+      height: 100rem; } }
   .testimonials__heading {
     margin-top: 10rem; }
   .testimonials__container {
     margin-top: 4rem;
     width: 60%; }
+    @media only screen and (max-width: 37.5em) {
+      .testimonials__container {
+        width: 90%; } }
