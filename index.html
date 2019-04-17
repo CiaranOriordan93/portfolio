@@ -12,10 +12,10 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <div class="nav__text-box">
+            <div class="nav__text-box wow fadeIn">
                 <p class="nav__logo-text"><span class="nav__logo-span">COR</span>|W</p>
             </div>
-            <div class="nav__items">
+            <div class="nav__items wow fadeIn">
                 <a href="#about" class="nav__link">about me</a>
                 <a href="#work" class="nav__link">projects</a>
                 <a href="#connect" class="nav__link">connect with me</a>
@@ -55,15 +55,15 @@
     <main>
         <section class="about" id="about">
             <div class="about__container">
-                <div class="about__text">
+                <div class="about__text wow fadeInLeft">
                     <h3 class="heading-tertiary">Who am I...</h3>
                     <h4 class="heading-fourth">Hello there! My name is Ciaran and I am a Front End Developer</h4>
                     <p class="para">Like many other people, I enjoy spending my free time increasing my 
                         knowledge of Web Development and building new and challenging projects.
                     </p>
-                    <a href="#" class="about__link"><button class="about-button">Find out more</button></a>
+                    <a href="#footer" class="about__link"><button class="about-button">Find out more</button></a>
                 </div>
-                <div class="about__img-container">
+                <div class="about__img-container wow fadeInRight">
                     <img src="/img/computer-world.png" alt="Computer and world" class="about__img-container__img">
                 </div>
             </div>
@@ -101,11 +101,11 @@
             </div>
         </section>
         <section class="connect" id="connect">
-            <div class="connect__text">
+            <div class="connect__text wow fadeInUpBig">
                 <h3 class="heading-tertiary">Connect with me:</h3>
                 <p class="para">Want to get in touch? I share my passion for development anywhere I can.</p>
             </div>
-            <div class="connect__contact">
+            <div class="connect__contact wow fadeInUpBig">
                     <a href="mailto:ciaranoriordan93@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 485.211 485.211" xml:space="preserve" class="connect__logo"><g><g>
                             <path d="M485.211,363.906c0,10.637-2.992,20.498-7.785,29.174L324.225,221.67l151.54-132.584   c5.895,9.355,9.446,20.344,9.446,32.219V363.906z M242.606,252.793l210.863-184.5c-8.653-4.737-18.397-7.642-28.908-7.642H60.651
                             c-10.524,0-20.271,2.905-28.889,7.642L242.606,252.793z M301.393,241.631l-48.809,42.734c-2.855,2.487-6.41,3.729-9.978,3.729   c-3.57,0-7.125-1.242-9.98-3.729l-48.82-42.736L28.667,415.23c9.299,5.834,20.197,9.329,31.983,9.329h363.911
@@ -158,17 +158,17 @@
                 <p class="para">There are many advantages to working with me. Here are a few:</p>
             </div>
             <div class="reasons">
-                <div class="reasons__skill">
+                <div class="reasons__skill wow fadeIn" data-wow-delay="0.3s">
                     <img src="img/code.svg" class="skill-icon">
                     <h4 class="heading-fourth">Passionate about development</h4>
                     <p class="para">I am a big believer in the fact that the greatest work is done by passionate people.</p>
                 </div>
-                <div class="reasons__skill">
+                <div class="reasons__skill wow fadeIn" data-wow-delay="0.6s">
                     <img src="img/open-book.svg" class="skill-icon">
                     <h4 class="heading-fourth">Quick learner</h4>
                     <p class="para">Confident in my ability to learn something new and put it into production. Thrive in fast-paced and competitive environments.</p>
                 </div>
-                <div class="reasons__skill">
+                <div class="reasons__skill wow fadeIn" data-wow-delay="0.9s">
                     <img src="img/people.svg" class="skill-icon">
                     <h4 class="heading-fourth">Adaptable</h4>
                     <p class="para">Always excited to learn new things. The most valuable thing I can provide to your company is the ability to be molded to your stack.</p>
@@ -180,7 +180,7 @@
                 <h3 class="heading-tertiary">Client Testimonials</h3>
                 <p class="para">Client feedback on great experiences</p>
             </div>
-            <div class="testimonials__container">
+            <div class="testimonials__container wow zoomIn">
                 <div class="testimonials__carousel">
                     <quote class="client-quote">Ciaran is creative, talented and knowledgeable with his service. We had several pieces of electronic and IT equipment
                     that had quit working but Alan was able to salvage and update them with new programs and software saving our business thousands of dollars
@@ -206,7 +206,7 @@
     </main>
     <footer class="footer" id="footer">
         <div class="footer__container">
-            <div class="footer__me">
+            <div class="footer__me wow slideInUp">
                 <h3 class="footer__heading">About Ciaran</h3>
                 <p class="footer__para">Hello there! My name is Ciaran and I'm a Front End Developer. I started my journey as a self-taught web developer in January 2018.
                     Ever since I have fallen in love with web development and spend most of my days taking my craft to the next level. Nowadays I tend to code all
@@ -253,7 +253,7 @@
                     </svg></a>
                 </div>
             </div>
-            <div class="footer__me-contact">
+            <div class="footer__me-contact wow slideInUp">
                 <h3 class="footer__heading">Say hello:</h3>
                 <ul class="footer__list">
                     <li class="footer__address"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 430.114 430.114" style="enable-background:new 0 0 430.114 430.114;" xml:space="preserve" class="footer-icon"><g><g>
@@ -270,14 +270,16 @@
                 </ul>
             </div>
         </div>
-        <div class="copyright">
+        <div class="copyright wow zoomIn">
             <p>&copy; 2019 Ciaran Oriordan</p>
         </div>
     </footer>
+    <script src="js/app.js"></script>
+    <script src="JS/smooth-scroll.js"></script>
+    <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
     </script>
-    <script src="js/app.js"></script>
 </body>
 </html>

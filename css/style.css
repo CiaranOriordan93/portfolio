@@ -517,10 +517,14 @@ li {
   background-color: #f7f7f7;
   height: 50rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center; }
   .connect__text {
-    width: 30%; }
+    width: 30%;
+    margin-right: -20rem; }
+    @media only screen and (max-width: 75em) {
+      .connect__text {
+        margin-right: 0; } }
   @media only screen and (max-width: 37.5em) {
     .connect {
       height: 50rem; } }
