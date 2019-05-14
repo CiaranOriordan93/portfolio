@@ -1,0 +1,17 @@
+{
+  "name": "corwebservices",
+  "version": "1.0.0",
+  "description": "Personal portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Ciaran O'Riordan",
+  "license": "ISC",
+  "dependencies": {
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

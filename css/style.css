@@ -43,7 +43,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 html {
   font-size: 62.5%; }
 
-button, input[type="submit"], input[type="reset"] {
+button,
+input[type="submit"],
+input[type="reset"] {
   background: none;
   color: inherit;
   border: none;
@@ -51,6 +53,9 @@ button, input[type="submit"], input[type="reset"] {
   font: inherit;
   cursor: pointer;
   outline: inherit; }
+
+.show {
+  display: none !important; }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -173,6 +178,21 @@ li {
   .client-button:hover {
     transform: scale(1.5);
     transition: all .3s; }
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1rem;
+  top: 6rem;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .dropdown__link {
+    color: #fff;
+    margin-bottom: 1rem;
+    transition: color 0.2s; }
+    .dropdown__link:hover {
+      color: #e71b2c;
+      transition: color 0.2s; }
 
 .skills__logo {
   position: relative;
@@ -503,12 +523,12 @@ li {
     width: 100%;
     padding: 5px;
     border: 2px solid #fff;
-    transition: all .4s; }
+    transition: all 0.4s; }
     .skills__para:hover {
       background-color: #fff;
       color: #e71b2c;
       border: 2px solid #e71b2c;
-      transition: all .4s; }
+      transition: all 0.4s; }
     @media only screen and (max-width: 37.5em) {
       .skills__para {
         font-size: 1.4rem; } }

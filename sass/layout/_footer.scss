@@ -1,0 +1,74 @@
+.footer {
+    border: 1px solid grey;
+    height: 40rem;
+    background-color: #484848;
+    color: $color-grey-light-1;
+
+    @include respond(tab-land) {
+        height: 53%;
+    }
+
+    @include respond(tab-port) {
+        height: 85%;
+    }
+
+    @include respond(phone) {
+        height: 110rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-around;  
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__me {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        width: 50%;
+
+        @include respond(tab-port) {
+            width: 85%;
+        }
+     
+        &:last-of-type {
+            width: 20%;
+        }
+
+        &-contact {
+            width: 30rem;
+            height: 30rem;
+        }
+    }
+
+    &__icon-container {
+        margin-top: 2rem;
+        height: 5rem;
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+
+        @include respond(tab-port) {
+            align-self: center;
+        }
+    }
+    
+
+    &__heading {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}

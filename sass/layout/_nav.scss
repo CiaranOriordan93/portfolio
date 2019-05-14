@@ -1,0 +1,131 @@
+.nav {
+    position: fixed;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 5rem;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid $color-grey-light-1;
+
+    &__text-box {
+        margin-left: 2%;
+    }
+
+    &__logo-text {
+        color: $color-grey-light-1;
+        font-size: 3rem;
+    }
+
+    &__logo-span {
+        color: $color-primary;
+    }
+
+    &__items {
+        width: 70rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-right: 2%;
+
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+
+    &__link {
+        color: #b8b8b8;
+        text-transform: uppercase;
+        transition: all .2s;
+        margin-right: 2rem;
+
+        &:hover {
+            color: #ffffff;
+            transition: all .2s;
+        }
+    }
+
+    &__img {
+        height: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+.navigation {
+    display: none;
+
+    @include respond(tab-port) {
+        display: block;
+    }
+
+    @include respond(phone) {
+        display: block;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        height: 4rem;
+        width: 4rem;
+        position: fixed;
+        top: .5rem;
+        right: 1rem;
+        border-radius: 50%;
+        z-index: 2000;
+        text-align: center;
+        cursor: pointer; 
+    }
+
+    &__icon {
+        position: relative;
+        margin-top: 2rem;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: #fff;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before { top: -.8rem; }
+        &::after { top: .8rem; }
+    }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}
+
+

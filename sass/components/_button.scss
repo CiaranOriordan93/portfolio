@@ -1,0 +1,58 @@
+.hero-button {
+    width: 30rem;
+    text-decoration: none;
+    color: $color-tertiary-light;
+    border: 1px solid $color-tertiary-light;
+    padding: 5px;
+    border-radius: 1rem;
+    transition: all .5s;
+
+    &:hover {
+        background-color: $color-tertiary-light;
+        color: $color-grey-light-2;
+        transition: all .5s;
+    }
+
+    @include respond(tab-land) {
+        margin-top: -1rem;
+    }
+}
+
+.nav-btn {
+    margin-top: 10rem;
+    height: 4rem;
+    animation-name: swing;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    transform-origin: top center;
+}
+
+.about-button {
+    width: 70%;
+    padding: .6rem;
+    border-radius: 1rem;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    transition: all .4s;
+
+    &:hover {
+        color: $color-primary;
+        background-color: $color-grey-light-2;
+        transition: all .4s;
+    }
+}
+
+.client-button {
+    margin-right: 1rem;
+    margin-top: 3rem;
+    height: 1rem;
+    width: 1rem;
+    background-color: $color-primary;
+    border-radius: 1rem;
+    transition: all .3s;
+
+    &:hover {
+        transform: scale(1.5);
+        transition: all .3s;
+    }
+}

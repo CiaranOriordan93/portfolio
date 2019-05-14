@@ -1,0 +1,20 @@
+.reasons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+    &__skill {
+        text-align: center;
+        width: 25%;
+
+        @include respond(phone) {
+            width: 90%;
+            margin-bottom: 4rem;
+        }
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+}

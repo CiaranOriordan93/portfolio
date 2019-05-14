@@ -1,0 +1,19 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1rem;
+  top: 6rem;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  &__link {
+    color: #fff;
+    margin-bottom: 1rem;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $color-primary;
+      transition: color 0.2s;
+    }
+  }
+}

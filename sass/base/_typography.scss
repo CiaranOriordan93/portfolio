@@ -1,0 +1,83 @@
+body {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    color: $color-grey-dark-3;
+}
+
+.heading-tertiary {
+    font-size: 3.5rem;
+    font-weight: 900;
+
+    &:after {
+        display: block;
+        content: " ";
+        width: 100%;
+        height: 1px;
+        background-color: $color-line;
+        margin-bottom: 2rem;
+    }
+
+    @include respond(tab-land) {
+        font-size: 3rem;
+    }
+}
+
+.heading-fourth {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.para {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.hero-primary {
+    color: $color-grey-light-2;
+    font-size: 4.5rem;
+
+    @include respond(tab-land) {
+        font-size: 3.5rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+}
+
+.hero-span {
+    color: $color-primary;
+}
+
+.hero-tertiary {
+    color: $color-grey-light-2;
+    font-size: 3rem;
+    
+    @include respond(tab-land) {
+        font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+}
+
+.hero-para {
+    color: $color-grey-light-2;
+    font-size: 1.7rem;
+
+    @include respond(tab-land) {
+        font-size: 1.6rem;
+    }
+}
+
+.hero-cite {
+    color: $color-grey-light-2;
+}
+
+.client-cite {
+    display: block;
+}
