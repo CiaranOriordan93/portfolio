@@ -57,6 +57,9 @@ input[type="reset"] {
 .show {
   display: none !important; }
 
+.active {
+  transform: scale(1.5) !important; }
+
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
