@@ -1,31 +1,35 @@
 @keyframes longFadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes swing {
-    20% {
-        transform: rotate3d(0, 0, 1, 15deg);
-    }
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
 
-    40% {
-        transform: rotate3d(0, 0, 1, -10deg);
-    }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
 
-    60% {
-        transform: rotate3d(0, 0, 1, 5deg);
-    }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
 
-    80% {
-        transform: rotate3d(0, 0, 1, -5deg);
-    }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
 
-    100% {
-        transform: rotate3d(0, 0, 1, 0deg);
-    }
+  100% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
