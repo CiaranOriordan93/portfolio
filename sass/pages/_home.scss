@@ -62,14 +62,114 @@
 }
 
 .work {
-  height: 100rem;
+  height: 150rem;
   background-color: $color-grey-light-1;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
   &__heading {
-    margin-top: 10rem;
+    width: 40rem;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
     text-align: center;
+  }
+
+  &__examples {
+    height: 110rem;
+    width: 90rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  &__filmbase {
+    display: flex;
+    align-items: center;
+  }
+
+  &__portfolio {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sytist {
+    display: flex;
+    align-items: center;
+  }
+
+  &__container {
+    height: 30rem;
+    width: 60rem;
+    cursor: pointer;
+    overflow: hidden;
+
+    &__img {
+      height: 100%;
+      width: 100%;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+
+  .work__text {
+    width: 60rem;
+    margin-left: 4rem;
+  }
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 1000;
+
+  &__content {
+    width: 50rem;
+    height: 30rem;
+    background-color: $color-black;
+    border-radius: 4px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text {
+    margin-left: 3rem;
+    width: 30rem;
+    color: $color-grey-light-2;
+  }
+
+  &__link {
+    color: $color-primary;
+    font-size: 2rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 25rem;
+    right: 53rem;
+    font-size: 5rem;
+    transform: rotate(45deg);
+    color: #fff;
+    cursor: pointer;
   }
 }
 

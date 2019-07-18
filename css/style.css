@@ -57,9 +57,6 @@ input[type="reset"] {
   cursor: pointer;
   outline: inherit; }
 
-.show {
-  display: none !important; }
-
 .active {
   transform: scale(1.5) !important; }
 
@@ -134,8 +131,8 @@ a {
 li {
   list-style: none; }
 
-.hide {
-  display: none; }
+.show {
+  display: none !important; }
 
 .hero-button {
   width: 30rem;
@@ -497,13 +494,84 @@ li {
     color: #eee; }
 
 .work {
-  height: 100rem;
+  height: 150rem;
   background-color: #f7f7f7;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
   .work__heading {
-    margin-top: 10rem;
+    width: 40rem;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
     text-align: center; }
+  .work__examples {
+    height: 110rem;
+    width: 90rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around; }
+  .work__filmbase {
+    display: flex;
+    align-items: center; }
+  .work__portfolio {
+    display: flex;
+    align-items: center; }
+  .work__sytist {
+    display: flex;
+    align-items: center; }
+  .work__container {
+    height: 30rem;
+    width: 60rem;
+    cursor: pointer;
+    overflow: hidden; }
+    .work__container__img {
+      height: 100%;
+      width: 100%;
+      transition: all 0.2s; }
+      .work__container__img:hover {
+        transform: scale(1.25); }
+  .work .work__text {
+    width: 60rem;
+    margin-left: 4rem; }
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 1000; }
+  .modal__content {
+    width: 50rem;
+    height: 30rem;
+    background-color: #000;
+    border-radius: 4px; }
+  .modal__img {
+    width: 100%;
+    height: 100%; }
+  .modal__text {
+    margin-left: 3rem;
+    width: 30rem;
+    color: #eee; }
+  .modal__link {
+    color: #e71b2c;
+    font-size: 2rem; }
+    .modal__link:hover {
+      opacity: 0.8; }
+  .modal__close {
+    position: absolute;
+    top: 25rem;
+    right: 53rem;
+    font-size: 5rem;
+    transform: rotate(45deg);
+    color: #fff;
+    cursor: pointer; }
 
 .skills {
   display: flex;
