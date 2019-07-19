@@ -74,6 +74,10 @@
     align-self: center;
     flex-direction: column;
     text-align: center;
+
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &__examples {
@@ -84,28 +88,60 @@
     flex-direction: column;
     align-self: center;
     justify-content: space-around;
+
+    @include respond(tab-land) {
+      width: 85%;
+    }
+
+    @include respond(phone) {
+      width: 95%;
+    }
   }
 
   &__filmbase {
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__portfolio {
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__sytist {
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__container {
     height: 30rem;
-    width: 60rem;
+    width: 50rem;
     cursor: pointer;
     overflow: hidden;
+
+    @include respond(tab-land) {
+      height: 25rem;
+      width: 40rem;
+    }
+
+    @include respond(phone) {
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      width: 100%;
+      height: auto;
+    }
 
     &__img {
       height: 100%;
@@ -121,6 +157,16 @@
   .work__text {
     width: 60rem;
     margin-left: 4rem;
+
+    @include respond(tab-land) {
+      width: 40%;
+    }
+
+    @include respond(phone) {
+      width: 95%;
+      margin-bottom: 4rem;
+      margin-left: 0rem;
+    }
   }
 }
 
@@ -129,17 +175,35 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.95);
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   top: 0;
   z-index: 1000;
+
+  &__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
 
   &__content {
     width: 50rem;
     height: 30rem;
     background-color: $color-black;
-    border-radius: 4px;
+
+    @include respond(tab-port) {
+      width: 60%;
+      height: 30rem;
+    }
+
+    @include respond(phone) {
+      width: 85%;
+    }
   }
 
   &__img {
@@ -151,6 +215,15 @@
     margin-left: 3rem;
     width: 30rem;
     color: $color-grey-light-2;
+
+    @include respond(tab-port) {
+      width: 30%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+      margin-top: 5rem;
+    }
   }
 
   &__link {
@@ -166,12 +239,25 @@
 
   &__close {
     position: absolute;
-    top: 25rem;
-    right: 53rem;
+    top: 20%;
+    right: 28%;
     font-size: 5rem;
     transform: rotate(45deg);
     color: #fff;
     cursor: pointer;
+
+    @include respond(tab-land) {
+      right: 14%;
+    }
+
+    @include respond(tab-port) {
+      right: 4%;
+    }
+
+    @include respond(phone) {
+      top: 1%;
+      right: 3%;
+    }
   }
 }
 

@@ -29,7 +29,9 @@ workHandle.addEventListener("click", event => {
 
 for (let i = 0; i < modalClose.length; i++) {
   modalClose[i].addEventListener("click", event => {
-    event.target.parentElement.parentElement.classList.toggle("show");
+    event.target.parentElement.parentElement.parentElement.classList.toggle(
+      "show"
+    );
   });
 }
 
