@@ -156,9 +156,11 @@
   &__link {
     color: $color-primary;
     font-size: 2rem;
+    margin-top: 2rem;
+    display: flex;
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.6;
     }
   }
 

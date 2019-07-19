@@ -561,9 +561,11 @@ li {
     color: #eee; }
   .modal__link {
     color: #e71b2c;
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin-top: 2rem;
+    display: flex; }
     .modal__link:hover {
-      opacity: 0.8; }
+      opacity: 0.6; }
   .modal__close {
     position: absolute;
     top: 25rem;
