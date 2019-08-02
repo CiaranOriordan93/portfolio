@@ -9,18 +9,25 @@ const modalHandle3 = document.querySelector(".modal__sytist");
 const modalClose = document.querySelectorAll(".modal__close");
 
 // display the corresponding modal to the appropriate clicked image element
-workHandle.addEventListener("click", event => {
+workHandle.addEventListener("click" || "touchend", event => {
+  console.log(event.target.parentElement.parentElement);
   if (event.target.nodeName === "IMG") {
     if (
-      event.target.parentElement.parentElement.className === "work__filmbase"
+      event.target.parentElement.parentElement.classList.contains(
+        "work__filmbase"
+      )
     ) {
       modalHandle1.classList.toggle("show");
     } else if (
-      event.target.parentElement.parentElement.className === "work__portfolio"
+      event.target.parentElement.parentElement.classList.contains(
+        "work__portfolio"
+      )
     ) {
       modalHandle2.classList.toggle("show");
     } else if (
-      event.target.parentElement.parentElement.className === "work__sytist"
+      event.target.parentElement.parentElement.classList.contains(
+        "work__sytist"
+      )
     ) {
       modalHandle3.classList.toggle("show");
     }
