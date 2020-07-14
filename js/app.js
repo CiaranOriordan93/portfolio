@@ -5,12 +5,11 @@ const carouselContent = document.querySelectorAll(".testimonials__carousel");
 const workHandle = document.querySelector(".work");
 const modalHandle1 = document.querySelector(".modal__filmbase");
 const modalHandle2 = document.querySelector(".modal__portfolio");
-const modalHandle3 = document.querySelector(".modal__sytist");
+const modalHandle3 = document.querySelector(".modal__loveshack");
 const modalClose = document.querySelectorAll(".modal__close");
 
 // display the corresponding modal to the appropriate clicked image element
 workHandle.addEventListener("click" || "touchend", event => {
-  console.log(event.target.parentElement.parentElement);
   if (event.target.nodeName === "IMG") {
     if (
       event.target.parentElement.parentElement.classList.contains(
@@ -26,7 +25,7 @@ workHandle.addEventListener("click" || "touchend", event => {
       modalHandle2.classList.toggle("show");
     } else if (
       event.target.parentElement.parentElement.classList.contains(
-        "work__sytist"
+        "work__loveshack"
       )
     ) {
       modalHandle3.classList.toggle("show");

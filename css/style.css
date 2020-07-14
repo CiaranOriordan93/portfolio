@@ -534,11 +534,11 @@ li {
     @media only screen and (max-width: 37.5em) {
       .work__portfolio {
         display: block; } }
-  .work__sytist {
+  .work__loveshack {
     display: flex;
     align-items: center; }
     @media only screen and (max-width: 37.5em) {
-      .work__sytist {
+      .work__loveshack {
         display: block; } }
   .work__container {
     height: 30rem;
